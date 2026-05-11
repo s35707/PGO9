@@ -3,7 +3,7 @@ import java.util.Objects;
 public class PickupPointShipment extends ShipmentOrder{
     String lockerSize;
     boolean fragile;
-    public PickupPointShipment(int orderNumber, String customerName, int distanceKm, double baseFee, boolean insured, String lockerSize, boolean fragile){
+    public PickupPointShipment(String orderNumber, String customerName, int distanceKm, double baseFee, boolean insured, String lockerSize, boolean fragile){
         super(orderNumber, customerName, distanceKm, baseFee, insured);
         this.lockerSize = lockerSize;
         this.fragile = fragile;

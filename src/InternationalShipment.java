@@ -4,7 +4,7 @@ public class InternationalShipment extends ShipmentOrder{
     String destinationCountry;
     boolean customsDocumentsRequired;
     boolean expressDelivery;
-    public InternationalShipment(int orderNumber, String customerName, int distanceKm, double baseFee, boolean insured, String destinationCountry, boolean customsDocumentsRequired, boolean expressDelivery){
+    public InternationalShipment(String orderNumber, String customerName, int distanceKm, double baseFee, boolean insured, String destinationCountry, boolean customsDocumentsRequired, boolean expressDelivery){
         super(orderNumber, customerName, distanceKm, baseFee, insured);
         this.destinationCountry = destinationCountry;
         this.customsDocumentsRequired = customsDocumentsRequired;
