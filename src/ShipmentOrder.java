@@ -6,12 +6,12 @@ public abstract class ShipmentOrder implements SummaryPrintable{
     boolean insured;
     double lastCalculatedPrice;
 
-    public ShipmentOrder(int number, String name, int distance, double fee, boolean isInsured){
-        orderNumber = number;
-        customerName = name;
-        distanceKm = distance;
-        baseFee = fee;
-        insured = isInsured;
+    public ShipmentOrder(int orderNumber, String customerName, int distanceKm, double baseFee, boolean insured){
+        this.orderNumber = orderNumber;
+        this.customerName = customerName;
+        this.distanceKm = distanceKm;
+        this.baseFee = baseFee;
+        this.insured = insured;
     }
 
     public int getOrderNumber(){
