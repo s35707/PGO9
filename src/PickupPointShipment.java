@@ -31,7 +31,7 @@ public class PickupPointShipment extends ShipmentOrder{
         else if (Objects.equals(this.lockerSize, "L")) {
             fee += 13;
         }
-        if(fragile){
+        if(this.fragile){
             fee += 12;
         }
         return fee;
